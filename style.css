@@ -1,0 +1,128 @@
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid:
+    "nav nav nav " 5vh
+    "header header header " 40vh
+    "main  main main" auto
+    "footer footer footer "30px
+    ;
+
+}
+.autok_tabla {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+
+}
+.szabalytabla{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    border-bottom: 1px black solid ;
+}
+
+.autok{
+    background-color: rgba(255, 255, 255,0.5);
+    
+}
+.autok>img{
+    width: 100%;
+    height: 55%;
+}
+.autok>h2{
+    justify-self: center;
+    
+}
+
+
+button {
+    background-color: #3395fd;
+  }
+
+
+
+
+
+header{
+    background-image: url(autok/fejlec..png);
+    grid-area: header;
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    
+    
+    
+    
+}
+nav{
+    background-color: rgb(255, 191, 145);
+    grid-area: nav;
+}
+main{
+    background-color: white;
+    grid-area: main;
+}
+aside{
+    background-color: rgb(247, 170, 142);
+    grid-area: aside;
+    height: 100%;
+}
+footer{
+    background-color: rgb(255, 175, 218);
+    grid-area: footer;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        grid:
+        "nav"20px
+        "header"40vh
+        "main"auto
+        "aside"auto
+        "footer"20px
+    
+    }
+    
+    .autok_tabla {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    }
+    .szabalytabla{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        border-bottom: 1px black solid ;
+
+}
+    
+}
