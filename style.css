@@ -140,7 +140,7 @@ footer {
     height: 30px;
     background-color: #3395fd;
 }
-erdekel:active{
+erdekel:click{
     scale: 0.9;
 }
 @media screen and (max-width: 1000px) {
@@ -174,11 +174,8 @@ erdekel:active{
         min-height: 30px;
         width: 100%;
         margin-top: auto;
-    }
-    footer{
         flex-direction: column;
     }
-
 }
 
 #imgOverlay {
@@ -201,5 +198,3 @@ erdekel:active{
     border-radius: 10px;
 }
 
-
-/* ...existing code... 
