@@ -15,7 +15,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid:
-        "nav nav nav " 5vh "header header header " 40vh "main  main main" auto "footer footer footer " 5vh;
+        "nav nav nav " 5vh "header header header " 40vh "main  main main" auto "footer footer footer " auto;
 
 }
 
@@ -111,6 +111,7 @@ header {
     background-image: url(autok/fejlec..png);
     grid-area: header;
     background-position: center;
+    border-radius: 20px;
     background-size: cover;
     padding-left: 5%;
 }
@@ -128,6 +129,16 @@ main {
 footer {
     background-color: rgba(60, 60, 60, 0.705);
     grid-area: footer;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.erdekel{
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: #3395fd;
 }
 
 @media screen and (max-width: 1000px) {
@@ -161,6 +172,9 @@ footer {
         min-height: 30px;
         width: 100%;
         margin-top: auto;
+    }
+    footer{
+        flex-direction: column;
     }
 
 }
