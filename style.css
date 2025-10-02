@@ -140,7 +140,10 @@ footer {
     height: 30px;
     background-color: #3395fd;
 }
-erdekel:click{
+erdekel:hover{
+    background-color: white;
+    color: #3395fd;
+erdekel:active{
     scale: 0.9;
 }
 @media screen and (max-width: 1000px) {
@@ -197,4 +200,5 @@ erdekel:click{
     border: 5px solid white;
     border-radius: 10px;
 }
+
 
