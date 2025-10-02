@@ -1,34 +1,27 @@
 #overlay {
-  position: fixed;
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 2;
-  cursor: pointer;
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
 }
 
-#text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-}
+
+
 body {
     width: 100vw;
     height: 100vh;
     display: grid;
     grid:
-    "nav nav nav " 5vh
-    "header header header " 40vh
-    "main  main main" auto
-    "footer footer footer "30px
-    ;
+        "nav nav nav " 5vh 
+        "header header header " 40vh 
+        "main  main main" auto 
+        "footer footer footer " 30px;
 
 }
+
 /* Card grid container Bootstrap-szerűen */
 .card-container {
     display: grid;
@@ -41,15 +34,19 @@ body {
 .card {
     background: #fff;
     border-radius: 1rem;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     overflow: hidden;
     transition: box-shadow 0.2s;
     display: flex;
     flex-direction: column;
 }
+
 .card:hover {
-    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    scale: 1.05;
+    transition: scale 0.3s;
 }
+
 .card-body {
     padding: 1.2rem;
     flex: 1 1 auto;
@@ -57,21 +54,25 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .card-title {
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 0.7rem;
 }
+
 .card-text {
     padding-left: 1rem;
     margin-bottom: 1rem;
 }
+
 .card-price {
     font-size: 1.1rem;
     font-weight: bold;
     color: #3395fd;
     margin-top: auto;
 }
+
 .card-btn {
     margin-top: 1rem;
     background-color: #3395fd;
@@ -82,9 +83,11 @@ body {
     cursor: pointer;
     transition: background 0.2s;
 }
+
 .card-btn:hover {
     background-color: #2176c7;
 }
+
 .card-img-top {
     width: 100%;
     height: 220px;
@@ -93,76 +96,72 @@ body {
     border-bottom: 1px solid #eee;
     display: block;
 }
-.szabalytabla{
+
+.szabalytabla {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    border-bottom: 1px black solid ;
+    border-bottom: 1px black solid;
 }
-
-/* Régi autok stílusok törölve, card-okra cserélve */
-
 
 button {
     background-color: #3395fd;
-  }
+}
 
-
-
-
-
-header{
+header {
     background-image: url(autok/fejlec..png);
     grid-area: header;
     background-position: center;
     background-size: cover;
     padding-left: 5%;
-    
-    
-    
-    
 }
-nav{
+
+nav {
     background-color: rgba(60, 60, 60, 0.705);
     grid-area: nav;
 }
-main{
+
+main {
     background-color: white;
     grid-area: main;
 }
-footer{
+
+footer {
     background-color: rgba(60, 60, 60, 0.705);
     grid-area: footer;
 }
 
-@media screen and (max-width: 1000px){
-    body{
+@media screen and (max-width: 1000px) {
+    body {
         grid:
-        "nav"20px
-        "header"40vh
-        "main"auto
-        "aside"auto
-        "footer"20px
-    
+            "nav" 20px "header" 40vh "main" auto "aside" auto "footer" 20px
     }
-    
+
     .autok_tabla {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
     }
-    .szabalytabla{
+
+    .szabalytabla {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 20px;
         grid-row-gap: 20px;
-        border-bottom: 1px black solid ;
+        border-bottom: 1px black solid;
+
+    }
 
 }
-    
+
+@media screen and (max-width: 600px) {
+
+    p{
+        font-size: 25px;
+    }
 }
