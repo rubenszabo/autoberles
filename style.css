@@ -140,7 +140,9 @@ footer {
     height: 30px;
     background-color: #3395fd;
 }
-
+erdekel:active{
+    scale: 0.9;
+}
 @media screen and (max-width: 1000px) {
     body {
         grid:
@@ -198,5 +200,6 @@ footer {
     border: 5px solid white;
     border-radius: 10px;
 }
+
 
 /* ...existing code... 
