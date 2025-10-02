@@ -1,268 +1,282 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6VZgQG1F1Qp1rZlKj9z6Y5n0RSu1z9F1F1F1F1F1F1F1F" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6VZgQG1F1Qp1rZlKj9z6Y5n0RSu1z9F1F1F1F1F1F1F1F" crossorigin="anonymous">
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qQ2iX+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qQ2iX+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 
     <title>Autóbérlés</title>
 </head>
+
 <body>
     <!-- Bootstrap JS -->
     <div id="overlay" onclick="off()">
-    <div id="text" style ="background-color: pink;">Overlay Text</div>
+        <div id="text" style="background-color: pink;">Overlay Text</div>
     </div>
-<nav></nav>
 
 
-<header>
-    
-    <h1 style="text-align: left; vertical-align: middle; color: white; font-size: 2.3em;">
-        Szabó Autókölcsönző
-    </h1>
-    <p style="font-size: 1.5em; color: white;">Megbízható, gyors és egyszerű autóbérlés Ikerváron! Csak és kizárólag kíváló állapotú gépsárkányok!</p>
-    
-</header>
+    <header>
+
+        <h1 style="text-align: left; vertical-align: middle; color: white; font-size: 2.3em;">
+            Szabó Autókölcsönző
+        </h1>
+        <p style="font-size: 1.5em; color: white;">Megbízható, gyors és egyszerű autóbérlés Ikerváron! Csak és kizárólag
+            kíváló állapotú gépsárkányok!</p>
+
+    </header>
 
 
-<main style="font-size: x-large;">
-<div style=" justify-content: center;padding-left: 10vw; padding-right: 10vw; padding-bottom: 5vh;">
-    <div>
-        <h2>Miért válasszon minket?</h2>
-        <p>Gyors, egyszerű és megbízható autóbérlés! <br>
-            Nálunk az autóbérlés nem bonyolult – pár perc alatt lefoglalhatja a járművet, amire szüksége van. Modern, jól karbantartott gépjárműparkunkkal és rugalmas feltételeinkkel biztosítjuk, hogy Ön mindig kényelmesen és biztonságban utazhasson.</p>
-        <ul style="font-weight: bold;">
-            <li>Kiváló ár-érték arány</li>
-            <li>Átlátható bérlési feltételek, rejtett költségek nélkül</li>
-            <li>Barátságos és segítőkész ügyfélszolgálat</li>
-            <li>Folyamatosan karbantartott, tiszta autók</li>
-        </ul>
-
-    </div>
-    <div>
-        <h2>Rólunk</h2>
-        <p>A Szabó Autókölcsönzés egy családi vállalkozásként indult, mára pedig a régió egyik megbízható szereplőjévé vált az autóbérlés területén. Küldetésünk, hogy ügyfeleink gyorsan és problémamentesen találjanak megfelelő járművet akár üzleti útra, nyaralásra vagy hétvégi kiruccanásra.<br>
-
-            A flottánkban megtalálhatóak a gazdaságos városi kisautóktól a családi egyterűeken át egészen a prémium kategóriás modellekig szinte minden járműtípus. Fontos számunkra az elégedettség, ezért minden bérlést személyre szabottan kezelünk.</p>
-        </div>
-
-        
-    
-    <div class="szabalytabla">
-                <div>
-                        <h3>Bérlési feltételek: </h3>
-                        <ul>
-                                <li>Érvényes személyi igazolvány és jogosítvány (minimum 1 éves) szükséges.</li>
-                                <li>A bérlőnek legalább 18 évesnek kell lennie.</li>
-                        </ul>
-                </div>
-
-                <div>
-                        <h3>Foglalás & fizetés:</h3>
-                        <ul>
-                                <li>A foglalás véglegesítéséhez előleg vagy teljes összeg befizetése szükséges.</li>
-                                <li>Elfogadott fizetési módok: készpénz, bankkártya, átutalás.</li>
-                        </ul>
-                </div>
-
-                <div>
-                        <h3>Autó átvétele & visszaadása:</h3>
-                        <ul>
-                                <li>Az autó átvételekor a bérlőnek alá kell írnia a bérleti szerződést és át kell vennie a járművet.</li>
-                                <li>Az autót tisztán és teljes tankkal kell visszaadni.</li>
-                        </ul>
-                </div>
-                <div>
-                <h3>Tilos:</h3>
-                <ul>
-                    <li>A jármű bármiféle szándékos módosítása, rongálása.</li>
-                    <li>A jármű engedély nélküli továbbadása harmadik félnek.</li>
+    <main style="font-size: x-large;">
+        <div style=" justify-content: center;padding-left: 10vw; padding-right: 10vw; padding-bottom: 5vh;">
+            <div>
+                <h2>Miért válasszon minket?</h2>
+                <p>Gyors, egyszerű és megbízható autóbérlés! <br>
+                    Nálunk az autóbérlés nem bonyolult – pár perc alatt lefoglalhatja a járművet, amire szüksége van.
+                    Modern, jól karbantartott gépjárműparkunkkal és rugalmas feltételeinkkel biztosítjuk, hogy Ön mindig
+                    kényelmesen és biztonságban utazhasson.</p>
+                <ul style="font-weight: bold;">
+                    <li>Kiváló ár-érték arány</li>
+                    <li>Átlátható bérlési feltételek, rejtett költségek nélkül</li>
+                    <li>Barátságos és segítőkész ügyfélszolgálat</li>
+                    <li>Folyamatosan karbantartott, tiszta autók</li>
                 </ul>
-            </div>
-    </div>
 
-    <div class="autok_tabla">
-        <div class="card-container">
-            <div class="card">
-                <img src="autok/raptor.jfif" class="card-img-top" alt="Ford Raptor">
-                <div class="card-body">
-                    <h5 class="card-title">Ford Raptor</h5>
-                    <ul class="card-text">
-                        <li>3 literes V6 EcoBoost</li>
-                        <li>4x4 hajtás</li>
-                        <li>292 HP</li>
-                        <li>felező</li>
-                        <li>3500 kg a maximálisan vontatható tömeg</li>
+            </div>
+            <div>
+                <h2>Rólunk</h2>
+                <p>A Szabó Autókölcsönzés egy családi vállalkozásként indult, mára pedig a régió egyik megbízható
+                    szereplőjévé vált az autóbérlés területén. Küldetésünk, hogy ügyfeleink gyorsan és problémamentesen
+                    találjanak megfelelő járművet akár üzleti útra, nyaralásra vagy hétvégi kiruccanásra.<br>
+
+                    A flottánkban megtalálhatóak a gazdaságos városi kisautóktól a családi egyterűeken át egészen a
+                    prémium kategóriás modellekig szinte minden járműtípus. Fontos számunkra az elégedettség, ezért
+                    minden bérlést személyre szabottan kezelünk.</p>
+            </div>
+
+
+
+            <div class="szabalytabla">
+                <div>
+                    <h3>Bérlési feltételek: </h3>
+                    <ul>
+                        <li>Érvényes személyi igazolvány és jogosítvány (minimum 1 éves) szükséges.</li>
+                        <li>A bérlőnek legalább 18 évesnek kell lennie.</li>
                     </ul>
-                    <p class="card-price">50,000 Ft/Nap</p>
+                </div>
+
+                <div>
+                    <h3>Foglalás & fizetés:</h3>
+                    <ul>
+                        <li>A foglalás véglegesítéséhez előleg vagy teljes összeg befizetése szükséges.</li>
+                        <li>Elfogadott fizetési módok: készpénz, bankkártya, átutalás.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Autó átvétele & visszaadása:</h3>
+                    <ul>
+                        <li>Az autó átvételekor a bérlőnek alá kell írnia a bérleti szerződést és át kell vennie a
+                            járművet.</li>
+                        <li>Az autót tisztán és teljes tankkal kell visszaadni.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Tilos:</h3>
+                    <ul>
+                        <li>A jármű bármiféle szándékos módosítása, rongálása.</li>
+                        <li>A jármű engedély nélküli továbbadása harmadik félnek.</li>
+                    </ul>
                 </div>
             </div>
-            <div class="card">
-                <img src="autok/xclass.jpg" class="card-img-top" alt="Mercedes Xclass">
-                <div class="card-body">
-                    <h5 class="card-title">Mercedes Xclass</h5>
-                    <ul class="card-text">
-                        <li>Lóerő: 650</li>
-                        <li>4x4 hajtás</li>
-                        <li></li>
-                        <li>Automata váltó</li>
-                        <li>Prémium felszereltség</li>
-                    </ul>
-                    <p class="card-price">50,000 Ft/Nap</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="autok/m4competition.webp" class="card-img-top" alt="BMW M4 Competition">
-                <div class="card-body">
-                    <h5 class="card-title">BMW M4 Competition</h5>
-                    <ul class="card-text">
-                        <li>Lóerő: 650</li>
-                        <li>Sport futómű</li>
-                        <li></li>
-                        <li>Automata váltó</li>
-                        <li>Prémium felszereltség</li>
-                    </ul>
-                    <p class="card-price">50,000 Ft/Nap</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="autok/Mercedes-AMG.jpg" class="card-img-top" alt="Mercedes-AMG">
-                <div class="card-body">
-                    <h5 class="card-title">Mercedes-AMG CLE 53 Coupé</h5>
-                    <ul class="card-text">
-                        <li>3 literes motor</li>
-                        <li>elektromos turbófeltöltő</li>
-                        <li>443 HP</li>
-                        <li>AMG line</li>
-                        <li>4MATIC+ összkerékhajtás</li>
-                    </ul>
-                    <p class="card-price">50,000 Ft/Nap</p>
-                    
-                </div>
-            </div>
-            <div class="card">
-                <img src="autok/G.jpg" class="card-img-top" alt="Opel Astra G">
-                <div class="card-body">
-                    <h5 class="card-title">Opel Astra G</h5>
-                    <ul class="card-text">
-                        <li>Lóerő: 650</li>
-                        <li>Manuális váltó</li>
-                        <li></li>
-                        <li>Gazdaságos fogyasztás</li>
-                        <li>Megbízható</li>
-                    </ul>
-                    <p class="card-price">50,000 Ft/Nap</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="autok/typeR.webp" class="card-img-top" alt="2021 Honda Civic Type R">
-                <div class="card-body">
-                    <h5 class="card-title">2021 Honda Civic Type R</h5>
-                    <ul class="card-text">
-                        <li>Lóerő: 650</li>
-                        <li>Sport futómű</li>
-                        <li></li>
-                        <li>Manuális váltó</li>
-                        <li>Prémium felszereltség</li>
-                    </ul>
-                    <p class="card-price">50,000 Ft/Nap</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="autok/1.9.jpg" class="card-img-top" alt="Volkswagen Passat B5">
-                <div class="card-body">
-                    <h5 class="card-title">Volkswagen Passat B5</h5>
-                    <ul class="card-text">
-                        <li>Lóerő: 650</li>
-                        <li></li>
-                        <li>Manuális váltó</li>
-                        <li>Gazdaságos fogyasztás</li>
-                        <li>Megbízható</li>
-                    </ul>
-                    <p class="card-price">50,000 Ft/Nap</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="autok/argqv.webp" class="card-img-top" alt="Alfa Romeo Giulia Quadrofoglio Verde">
-                <div class="card-body">
-                    <h5 class="card-title">Alfa Romeo Giulia Quadrofoglio Verde</h5>
-                    <ul class="card-text">
-                        <li>Lóerő: 650</li>
-                        <li></li>
-                        <li>Sport futómű</li>
-                        <li>Automata váltó</li>
-                        <li>Prémium felszereltség</li>
-                    </ul>
-                    <p class="card-price">50,000 Ft/Nap</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="autok/raptor.jfif" class="card-img-top" alt="Ford Raptor">
-                <div class="card-body">
-                    <h5 class="card-title">Ford Raptor</h5>
-                    <ul class="card-text">
-                        <li>Lóerő: 650</li>
-                        <li>4x4 hajtás</li>
-                        <li></li>
-                        <li>Automata váltó</li>
-                        <li>Prémium felszereltség</li>
-                    </ul>
-                    <p class="card-price">50,000 Ft/Nap</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="autok/raptor.jfif" class="card-img-top" alt="Ford Raptor">
-                <div class="card-body">
-                    <h5 class="card-title">Ford Raptor</h5>
-                    <ul class="card-text">
-                        <li>Lóerő: 650</li>
-                        <li>4x4 hajtás</li>
-                        <li></li>
-                        <li>Automata váltó</li>
-                        <li>Prémium felszereltség</li>
-                    </ul>
-                    <p class="card-price">50,000 Ft/Nap</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="autok/raptor.jfif" class="card-img-top" alt="Ford Raptor">
-                <div class="card-body">
-                    <h5 class="card-title">Ford Raptor</h5>
-                    <ul class="card-text">
-                        <li>Lóerő: 650</li>
-                        <li>4x4 hajtás</li>
-                        <li></li>
-                        <li>Automata váltó</li>
-                        <li>Prémium felszereltség</li>
-                    </ul>
-                    <p class="card-price">50,000 Ft/Nap</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="autok/raptor.jfif" class="card-img-top" alt="Ford Raptor">
-                <div class="card-body">
-                    <h5 class="card-title">Ford Raptor</h5>
-                    <ul class="card-text">
-                        <li>Lóerő: 650</li>
-                        <li></li>
-                        <li>4x4 hajtás</li>
-                        <li>Automata váltó</li>
-                        <li>Prémium felszereltség</li>
-                    </ul>
-                    <p class="card-price">50,000 Ft/Nap</p>
+
+            <div class="autok_tabla">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="autok/raptor.jfif" class="card-img-top" alt="Ford Raptor">
+                        <div class="card-body">
+                            <h5 class="card-title">Ford Raptor</h5>
+                            <ul class="card-text">
+                                <li>3 literes V6 EcoBoost</li>
+                                <li>4x4 hajtás</li>
+                                <li>292 HP</li>
+                                <li>felező</li>
+                                <li>3500 kg a maximálisan vontatható tömeg</li>
+                            </ul>
+                            <p class="card-price">50,000 Ft/Nap</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="autok/xclass.jpg" class="card-img-top" alt="Mercedes Xclass">
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes Xclass</h5>
+                            <ul class="card-text">
+                                <li>Lóerő: 650</li>
+                                <li>4x4 hajtás</li>
+                                <li></li>
+                                <li>Automata váltó</li>
+                                <li>Prémium felszereltség</li>
+                            </ul>
+                            <p class="card-price">50,000 Ft/Nap</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="autok/m4competition.webp" class="card-img-top" alt="BMW M4 Competition">
+                        <div class="card-body">
+                            <h5 class="card-title">BMW M4 Competition</h5>
+                            <ul class="card-text">
+                                <li>Lóerő: 650</li>
+                                <li>Sport futómű</li>
+                                <li></li>
+                                <li>Automata váltó</li>
+                                <li>Prémium felszereltség</li>
+                            </ul>
+                            <p class="card-price">50,000 Ft/Nap</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="autok/Mercedes-AMG.jpg" class="card-img-top" alt="Mercedes-AMG">
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes-AMG CLE 53 Coupé</h5>
+                            <ul class="card-text">
+                                <li>3 literes motor</li>
+                                <li>elektromos turbófeltöltő</li>
+                                <li>443 HP</li>
+                                <li>AMG line</li>
+                                <li>4MATIC+ összkerékhajtás</li>
+                            </ul>
+                            <p class="card-price">50,000 Ft/Nap</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="autok/G.jpg" class="card-img-top" alt="Opel Astra G">
+                        <div class="card-body">
+                            <h5 class="card-title">Opel Astra G</h5>
+                            <ul class="card-text">
+                                <li>Lóerő: 650</li>
+                                <li>Manuális váltó</li>
+                                <li>cvncdv</li>
+                                <li>Gazdaságos fogyasztás</li>
+                                <li>Megbízható</li>
+                            </ul>
+                            <p class="card-price">50,000 Ft/Nap</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="autok/typeR.webp" class="card-img-top" alt="2021 Honda Civic Type R">
+                        <div class="card-body">
+                            <h5 class="card-title">2021 Honda Civic Type R</h5>
+                            <ul class="card-text">
+                                <li>Lóerő: 650</li>
+                                <li>Sport futómű</li>
+                                <li>cvbcv</li>
+                                <li>Manuális váltó</li>
+                                <li>Prémium felszereltség</li>
+                            </ul>
+                            <p class="card-price">50,000 Ft/Nap</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="autok/1.9.jpg" class="card-img-top" alt="Volkswagen Passat B5">
+                        <div class="card-body">
+                            <h5 class="card-title">Volkswagen Passat B5</h5>
+                            <ul class="card-text">
+                                <li>Lóerő: 650</li>
+                                <li>bcvb</li>
+                                <li>Manuális váltó</li>
+                                <li>Gazdaságos fogyasztás</li>
+                                <li>Megbízható</li>
+                            </ul>
+                            <p class="card-price">50,000 Ft/Nap</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="autok/argqv.webp" class="card-img-top" alt="Alfa Romeo Giulia Quadrofoglio Verde">
+                        <div class="card-body">
+                            <h5 class="card-title">Alfa Romeo Giulia Quadrofoglio Verde</h5>
+                            <ul class="card-text">
+                                <li>Lóerő: 650</li>
+                                <li>vbccv</li>
+                                <li>Sport futómű</li>
+                                <li>Automata váltó</li>
+                                <li>Prémium felszereltség</li>
+                            </ul>
+                            <p class="card-price">50,000 Ft/Nap</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="autok/crafter.jpg" class="card-img-top" alt="VW Crafter">
+                        <div class="card-body">
+                            <h5 class="card-title">Volkswagen Crafter</h5>
+                            <ul class="card-text">
+                                <li>2.0 TDI</li>
+                                <li>hasznos teher: 1356 kg</li>
+                                <li>136 HP</li>
+                                <li>plató méretei: 2.85x2x0.40 (m)</li>
+                                <li>9 ülés</li>
+                            </ul>
+                            <p class="card-price">50,000 Ft/Nap</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="autok//sprinter.webp" class="card-img-top" alt="Mercedes Sprinter">
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes Sprinter</h5>
+                            <ul class="card-text">
+                                <li>2.1 CDI</li>
+                                <li>190 HP</li>
+                                <li>20 ülés</li>
+                                <li>5 t össztömeg</li>
+                                <li>4x4 hajtás</li>
+                            </ul>
+                            <p class="card-price">50,000 Ft/Nap</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="autok/mantge.jpg" class="card-img-top" alt="MAN TGE">
+                        <div class="card-body">
+                            <h5 class="card-title">MAN TGE</h5>
+                            <ul class="card-text">
+                                <li>2.0 TDI</li>
+                                <li>163 HP</li>
+                                <li>raktér méretei: 595x200x265 (cm)</li>
+                                <li>18 m<sup>3</sup> raktér</li>
+                                <li>4x4 hajtás</li>
+                            </ul>
+                            <p class="card-price">50,000 Ft/Nap</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="autok/raptor.jfif" class="card-img-top" alt="Ford Raptor">
+                        <div class="card-body">
+                            <h5 class="card-title">Ford Raptor</h5>
+                            <ul class="card-text">
+                                <li>Lóerő: 650</li>
+                                <li>bvcbvb</li>
+                                <li>4x4 hajtás</li>
+                                <li>Automata váltó</li>
+                                <li>Prémium felszereltség</li>
+                            </ul>
+                            <p class="card-price">50,000 Ft/Nap</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-</main>
-<footer>
-
-</footer>
+    </main>
+    <footer>
+        <p style="text-align: center; vertical-align: middle; color: white; font-size: 1.2em;">
+            &copy; 2024 Szabó Autókölcsönző | Minden jog fenntartva.
+        </p>
+    </footer>
 </body>
 
 </html>

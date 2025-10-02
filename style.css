@@ -12,13 +12,13 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid:
         "nav nav nav " 5vh 
         "header header header " 40vh 
-        "main  main main" auto 
-        "footer footer footer " 30px;
+        "main  main main" auto
+        "footer footer footer " 5vh;
 
 }
 
@@ -136,32 +136,33 @@ footer {
 @media screen and (max-width: 1000px) {
     body {
         grid:
-            "nav" 20px "header" 40vh "main" auto "aside" auto "footer" 20px
+           "header" auto "main" 1fr "footer" auto;
+        min-height: 100vh;
     }
 
     .autok_tabla {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(10, 1fr);
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
+        grid-template-columns: 1fr;
+        gap: 5px;
     }
 
     .szabalytabla {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        border-bottom: 1px black solid;
-
+        grid-template-columns: 1fr;
+        gap: 20px;
+        border-bottom: 4px black solid;
+        border-radius: 4px;
+    }
+    main {
+        padding-bottom: 0 !important;
+    }
+    footer {
+        background-color: rgba(60, 60, 60, 0.705);
+        grid-area: footer;
+        min-height: 30px;
+        width: 100%;
+        margin-top: auto;
     }
 
 }
 
-@media screen and (max-width: 600px) {
-
-    p{
-        font-size: 25px;
-    }
-}
