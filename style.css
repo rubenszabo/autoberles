@@ -107,6 +107,135 @@ body {
     border-bottom: 1px black solid;
 }
 
+/* Diagonal split block: left white with text, right shows Mercedes-AMG image */
+.kocka {
+    position: relative;
+    overflow: hidden; /* prevent text overlapping the image */
+    border-radius: 1rem;
+    min-height: 260px;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+/* Left content area (white) stacked above the image */
+.kocka-left {
+    position: relative;
+    z-index: 5; /* sits above the white overlay */
+    padding: 2rem;
+    background: transparent; /* left white provided by ::after */
+    color: #111;
+    max-width: 54%; /* constrain text to the left white area */
+    box-sizing: border-box;
+}
+
+.kocka-left h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+.kocka-left p {
+    line-height: 1.5;
+    color: #222;
+}
+
+/* Decorative diagonal split — right side shows image via ::before */
+.kocka::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 60%; /* make the image area narrower (right side) */
+    background-image: url('autok/Mercedes-AMG.jpg');
+    /* make the image visually smaller inside the right area */
+    background-size: 70% auto;
+    background-repeat: no-repeat;
+    background-position: center right;
+    z-index: 1;
+    transform-origin: top left;
+    transform: skewX(-12deg);
+}
+
+/* White background for left area, using ::after to create a clean diagonal cut overlapping the image */
+.kocka::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60%; /* left white area covers 60% */
+    background: #ffffff;
+    z-index: 2;
+    transform-origin: top left;
+    transform: skewX(-12deg);
+}
+
+/* Thin separator line along the diagonal */
+.kocka-separator {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 59.6%;
+    width: 2px;
+    background: rgba(0,0,0,0.12);
+    transform: skewX(-12deg);
+    z-index: 4;
+    box-shadow: 0 0 12px rgba(0,0,0,0.06);
+}
+
+/* Ensure left content sits on top of the white background */
+.kocka-left * {
+    position: relative;
+    z-index: 4;
+}
+
+/* Mobile: stacked layout — use the same ::before image as a top banner (single image only) */
+@media (max-width: 768px) {
+    /* Mobile: put the image under the text (rakd alá) */
+    /* hide desktop diagonal image */
+    .kocka::before {
+        display: none;
+    }
+
+    /* Use ::after as the full-width bottom image */
+    .kocka::after {
+        display: block;
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        height: 180px;
+        width: 100%;
+        background-image: url('autok/Mercedes-AMG.jpg');
+        background-size: cover;
+        background-position: center;
+        transform: none;
+        z-index: 1;
+        border-bottom-left-radius: 0.6rem;
+        border-bottom-right-radius: 0.6rem;
+    }
+
+    /* hide separator on mobile */
+    .kocka-separator {
+        display: none;
+    }
+
+    .kocka {
+        background: #fff;
+        border-radius: 0.6rem;
+        padding-top: 0.75rem; /* keep space above content */
+        padding-bottom: 220px; /* reserve space for the bottom image */
+        box-sizing: border-box;
+    }
+
+    .kocka-left {
+        width: 100%;
+        margin-right: 0;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+}
+
+
 button {
     background-color: #3395fd;
 }
@@ -137,13 +266,15 @@ footer {
     display: flex;
     flex-direction: row;
 }
-.erdekel{
+
+.erdekel {
     border: none;
     border-radius: 20px;
     width: 100px;
     height: 30px;
     background-color: #3395fd;
 }
+
 .erdekel:hover{
     transition: transform 0.3s ease;
     transform: scale(1.1);
@@ -151,39 +282,41 @@ footer {
 .erdekel:active{
     scale: 0.9;
 }
+
 @media screen and (max-width: 1000px) {
-    body {
-        grid:
-            "header" auto "main" 1fr "footer" auto;
-    }
+        body {
+            grid:
+                "header" auto "main" 1fr "footer" auto;
+            
+        }
 
-    .autok_tabla {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 5px;
-    }
+        .autok_tabla {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 5px;
+        }
 
-    .szabalytabla {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        border-bottom: 4px black solid;
-        border-radius: 4px;
-    }
+        .szabalytabla {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            border-bottom: 4px black solid;
+            border-radius: 4px;
+        }
 
-    main {
-        padding-bottom: 0 !important;
-    }
+        main {
+            padding-bottom: 0 !important;
+        }
 
-    footer {
-        background-color: rgba(60, 60, 60, 0.705);
-        grid-area: footer;
-        min-height: 30px;
-        width: 100%;
-        margin-top: auto;
-        flex-direction: column;
+        footer {
+            background-color: rgba(60, 60, 60, 0.705);
+            grid-area: footer;
+            min-height: 30px;
+            width: 100%;
+            margin-top: auto;
+            flex-direction: column;
+        }
     }
-}
 
 #imgOverlay {
     display: none;
@@ -202,5 +335,4 @@ footer {
     border: 5px solid white;
     border-radius: 10px;
 }
-
 
