@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid:
-        "nav nav nav " 5vh "header header header " 40vh "main  main main" auto "footer footer footer " auto;
+        "header header header " 40vh "main  main main" auto "footer footer footer " auto;
 
 }
 
@@ -244,7 +244,6 @@ header {
     background-image: url(autok/fejlec..png);
     grid-area: header;
     background-position: center;
-    border-radius: 20px;
     background-size: cover;
     padding-left: 5%;
 }
@@ -263,8 +262,13 @@ footer {
     background-color: rgba(60, 60, 60, 0.705);
     grid-area: footer;
     padding: 10px;
+    flex-wrap:nowrap;
     display: flex;
     flex-direction: row;
+}
+footer>div{
+    flex-grow: 1;
+    flex-basis: 200;
 }
 
 .erdekel {
@@ -283,13 +287,15 @@ footer {
     scale: 0.9;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
         body {
             grid:
                 "header" auto "main" 1fr "footer" auto;
             
         }
-
+        p{
+            font-size: 0.8em;
+        }
         .autok_tabla {
             display: grid;
             grid-template-columns: 1fr;
@@ -314,7 +320,17 @@ footer {
             min-height: 30px;
             width: 100%;
             margin-top: auto;
+            flex-wrap: wrap;
             flex-direction: column;
+        }
+        .elso{
+            order: 1;
+        }
+        .masodik{
+            order: 2;
+        }
+        .harmadik{
+            order: 3;
         }
     }
 
