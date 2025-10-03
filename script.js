@@ -50,8 +50,4 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener('touchmove', function () {
     hideImgOverlay();
   }, { passive: true });
-
-  document.addEventListener('pointerdown', function () {
-    hideImgOverlay();
-  });
 });
